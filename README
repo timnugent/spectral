@@ -64,6 +64,9 @@ K-means code adapted from:
 
 https://github.com/pthimon/clustering
 
+Useful info:
+http://charlesmartin14.wordpress.com/2012/10/09/spectral-clustering/
+
 
 Bugs
 ----

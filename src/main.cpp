@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "spectral.h"
 
 using namespace std;

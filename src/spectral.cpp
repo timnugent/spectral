@@ -65,14 +65,6 @@ int Spectral::write_data(const char* data, char sep){
 
 double Spectral::kernel(const VectorXd& a, const VectorXd& b){
 
-	/*
-		Kernels
-		1 = RBF
-		2 = Polynomial
-		TODO - add some of these these:
-		http://crsouza.blogspot.co.uk/2010/03/kernel-functions-for-machine-learning.html	
-
-	*/
 	switch(kernel_type){
 	    case 2  :
 	    	return(pow(a.dot(b)+constant,order));
@@ -126,8 +118,7 @@ void Spectral::eigendecomposition(){
 	}
 	// http://stackoverflow.com/questions/5122804/sorting-with-lambda
 	sort(eigen_pairs.begin(),eigen_pairs.end(), [](const pair<double,VectorXd> a, const pair<double,VectorXd> b) -> bool {return (a.first > b.first);} );
-	//for(unsigned int i = 0; i < eigen_pairs.size(); i++){
-	
+
 	if(centers > eigen_pairs.size()) centers = eigen_pairs.size();
 
 	for(unsigned int i = 0; i < eigen_pairs.size(); i++){	
@@ -164,7 +155,7 @@ void Spectral::cluster(){
 
 }
 
-// Code adapter from https://github.com/pthimon/clustering
+// Code adapted from https://github.com/pthimon/clustering
 void Spectral::kmeans(){
 
 	random_device rd;

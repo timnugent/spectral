@@ -225,7 +225,7 @@ void Spectral::kmeans(){
 		double e = minvals.sum();
 		double ediff = fabs(old_e-e);
 		double cdiff = (centroids-old_centroids).cwiseAbs().maxCoeff();
-		printf("Iterations %i : Error %2.4f : Error delta %2.4f: Centroid movement %2.4f\n",n+1,e,ediff,cdiff);
+		printf("Iterations %i : Error %2.4f : Error delta %2.4f : Centroid movement %2.4f\n",n+1,e,ediff,cdiff);
 		if(n && cdiff < numeric_limits<double>::epsilon() && ediff < numeric_limits<double>::epsilon()){
 			break;
 		}

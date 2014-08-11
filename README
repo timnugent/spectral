@@ -1,0 +1,71 @@
+Spectral Clustering
+-------------------
+Tim Nugent 2014
+
+Performs K-means clustering using top K eigenvectors of an affinity (kernel) matrix. Kernel matrix is generated using the radial basis function kernel. Input is an n X p data matrix in CSV format, or an Eigen MatrixXd object via the constructor.
+
+
+Build
+-----
+
+Install Eigen, e.g.:
+
+sudo apt-get install libeigen3-dev
+
+or download from http://eigen.tuxfamily.org/.
+
+Make sure the include path is set right in the Makefile.
+
+Compile with 'make' or:
+
+g++ -O3 --std=c++11 -Wall -Wextra -I/usr/include/eigen3 src/*.cpp -o bin/sc
+
+
+Run
+---
+
+Run with 'make test', or:
+
+bin/sc
+
+Spirals test CSV file is read from the data directory.
+
+
+Output
+------
+
+bin/sc
+Read data/spirals.csv
+Iterations 1 : Error 1.7881 : Error delta 1.7881: Centroid movement 0.0711
+Iterations 2 : Error 0.4435 : Error delta 1.3446: Centroid movement 0.0197
+Iterations 3 : Error 0.2425 : Error delta 0.2010: Centroid movement 0.0122
+Iterations 4 : Error 0.2130 : Error delta 0.0295: Centroid movement 0.0000
+Iterations 5 : Error 0.2130 : Error delta 0.0000: Centroid movement 0.0000
+Wrote data/spirals_clustered.csv
+Cluster assignments:
+1 1 2 2 1 2 2 2 1 2 2 1 1 2 2 1 1 1 1 1 2 2 1 2 2 2 2 1 1 1 2 1 2 2 1 2 1 2 1 1 2 2 2 2 1 1 1 1 1 2 1 2 1 1 2 2 2 1 1 1 1 1 2 2 1 2 1 1 1 2 2 1 2 2 2 1 1 1 1 2 1 2 1 2 1 1 1 1 1 1 2 1 1 2 2 2 1 2 2 2 2 1 1 1 2 2 1 2 2 2 1 2 1 1 1 1 2 2 1 1 2 1 1 1 2 1 2 1 1 1 1 1 2 2 2 2 2 1 1 1 2 2 1 2 1 1 1 2 2 2 1 2 2 2 2 2 2 1 1 1 1 2 1 2 1 1 1 2 1 1 1 1 2 1 2 1 1 1 2 2 1 1 1 2 2 2 1 1 2 2 2 2 2 2 2 2 1 1 1 1 2 1 2 2 1 2 1 2 2 2 2 2 1 2 1 2 1 2 1 1 1 2 2 2 2 1 1 1 2 1 1 2 2 2 2 2 1 1 2 2 2 2 1 1 1 2 2 2 2 2 2 1 1 2 2 1 1 1 1 1 1 1 2 2 2 2 1 2 1 2 1 1 2 2 2 1 2 1 1 1 1 2 2 1 2 1 2 2 2 1 2 1 2 2 1 1 2 2 2 1 
+Plotting data using R...
+src/plot.R
+
+If R is installed, see spirals_clustered.png. A new CSV file (spirals_clustered.csv) is also written to data/ containing the cluster assignments.
+
+
+To-do
+-----
+
+-Add more kernels
+-Add automatic gamma tuning for RBF kernel
+
+
+References
+----------
+
+K-means code adapted from:
+
+https://github.com/pthimon/clustering
+
+
+Bugs
+----
+
+timnugent@gmail.com

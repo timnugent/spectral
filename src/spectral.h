@@ -24,7 +24,7 @@ public:
 	void set_kernel(const unsigned int i){kernel_type = i;};	
 	void set_normalise(const unsigned int i){normalise = i;};
 	void set_gamma(const double i){gamma = i;};
-	void set_constant(const int i){constant = i;};
+	void set_constant(const double i){constant = i;};
 	void set_order(const double i){order = i;};
 	void set_max_iters(const unsigned int i){max_iters = i;};
 	void cluster();

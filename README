@@ -20,6 +20,14 @@ Compile with 'make' or:
 
 g++ -O3 --std=c++11 -Wall -Wextra -I/usr/include/eigen3 src/*.cpp -o bin/sc
 
+On OS X using brew:
+
+brew install eigen
+
+Then:
+
+g++ -O3 --std=c++11 -Wall -Wextra -I/usr/local/include/eigen3 src/*.cpp -o bin/sc
+
 
 Run
 ---

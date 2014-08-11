@@ -36,11 +36,11 @@ Output
 
 bin/sc
 Read data/spirals.csv
-Iterations 1 : Error 1.7881 : Error delta 1.7881: Centroid movement 0.0711
-Iterations 2 : Error 0.4435 : Error delta 1.3446: Centroid movement 0.0197
-Iterations 3 : Error 0.2425 : Error delta 0.2010: Centroid movement 0.0122
-Iterations 4 : Error 0.2130 : Error delta 0.0295: Centroid movement 0.0000
-Iterations 5 : Error 0.2130 : Error delta 0.0000: Centroid movement 0.0000
+Iterations 1 : Error 1.7881 : Error delta 1.7881 : Centroid movement 0.0711
+Iterations 2 : Error 0.4435 : Error delta 1.3446 : Centroid movement 0.0197
+Iterations 3 : Error 0.2425 : Error delta 0.2010 : Centroid movement 0.0122
+Iterations 4 : Error 0.2130 : Error delta 0.0295 : Centroid movement 0.0000
+Iterations 5 : Error 0.2130 : Error delta 0.0000 : Centroid movement 0.0000
 Wrote data/spirals_clustered.csv
 Cluster assignments:
 1 1 2 2 1 2 2 2 1 2 2 1 1 2 2 1 1 1 1 1 2 2 1 2 2 2 2 1 1 1 2 1 2 2 1 2 1 2 1 1 2 2 2 2 1 1 1 1 1 2 1 2 1 1 2 2 2 1 1 1 1 1 2 2 1 2 1 1 1 2 2 1 2 2 2 1 1 1 1 2 1 2 1 2 1 1 1 1 1 1 2 1 1 2 2 2 1 2 2 2 2 1 1 1 2 2 1 2 2 2 1 2 1 1 1 1 2 2 1 1 2 1 1 1 2 1 2 1 1 1 1 1 2 2 2 2 2 1 1 1 2 2 1 2 1 1 1 2 2 2 1 2 2 2 2 2 2 1 1 1 1 2 1 2 1 1 1 2 1 1 1 1 2 1 2 1 1 1 2 2 1 1 1 2 2 2 1 1 2 2 2 2 2 2 2 2 1 1 1 1 2 1 2 2 1 2 1 2 2 2 2 2 1 2 1 2 1 2 1 1 1 2 2 2 2 1 1 1 2 1 1 2 2 2 2 2 1 1 2 2 2 2 1 1 1 2 2 2 2 2 2 1 1 2 2 1 1 1 1 1 1 1 2 2 2 2 1 2 1 2 1 1 2 2 2 1 2 1 1 1 1 2 2 1 2 1 2 2 2 1 2 1 2 2 1 1 2 2 2 1 

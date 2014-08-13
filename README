@@ -2,7 +2,7 @@ Spectral Clustering
 -------------------
 Tim Nugent 2014
 
-Performs K-means clustering using top K eigenvectors of an affinity (kernel) matrix. Kernel matrix is generated using the radial basis function kernel. Input is an nXp data matrix in CSV format via the read_data function, or an nXp Eigen MatrixXd object via the constructor.
+Performs K-means clustering using top K eigenvectors of an affinity (kernel) matrix. Kernel matrix is generated using the radial basis function kernel before being normalised. Input is an nXp data matrix in CSV format via the read_data function, or an nXp Eigen MatrixXd object via the constructor.
 
 
 Build
